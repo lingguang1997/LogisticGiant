@@ -1,12 +1,23 @@
-1. How to release an object in dealloc function:
+Using git
 
-   if you declare a "retain" object, e.g. "@property (retain) UIView *view;"
+- Ignore .DS_Store in git
 
-   call "self.view = nil" to release the object and avoid dangling pointer.
+    git confit --global core.excludesfile ~/.gitignore
+
+    echo .DS_Store >> ~/.gitignore
 
 
-2. Do not use "autorelease" if possible.
+Coding Style
 
-3. Do not use IBOutlet if possible.
+- Release an object in dealloc function:
+
+    if you declare a "retain" object, e.g. "@property (retain) UIView *view;"
+
+    call "self.view = nil" to release the object and avoid dangling pointer.
+
+
+- Do not use "autorelease" if possible.
+
+- Do not use IBOutlet if possible.
 
 

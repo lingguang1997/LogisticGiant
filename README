@@ -10,6 +10,12 @@ Using git
 
    git config --global core.editor vim
 
+- (Optional) Use GitHub GUI for convenience
+
+  http://mac.github.com/
+
+  do check diff before commit.
+
 
 Coding Style
 

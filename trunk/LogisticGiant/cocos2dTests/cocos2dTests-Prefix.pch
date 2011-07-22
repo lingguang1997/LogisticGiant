@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'cocos2dTests' target in the 'cocos2dTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D77C79AD13E8592F00290CCE /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B6D66D13D93FAB00D12DB0 /* libcocos2d.a */; };
+		D77C79B113E8595000290CCE /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77C79AE13E8595000290CCE /* OpenAL.framework */; };
+		D77C79B213E8595000290CCE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77C79AF13E8595000290CCE /* OpenGLES.framework */; };
+		D77C79B313E8595000290CCE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77C79B013E8595000290CCE /* QuartzCore.framework */; };
+		D77C79B513E8596000290CCE /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D77C79B413E8596000290CCE /* libz.dylib */; };
 		D7B6D52913D93F2800D12DB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B6D52813D93F2800D12DB0 /* UIKit.framework */; };
 		D7B6D52B13D93F2800D12DB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B6D52A13D93F2800D12DB0 /* Foundation.framework */; };
 		D7B6D52D13D93F2800D12DB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B6D52C13D93F2800D12DB0 /* CoreGraphics.framework */; };
@@ -208,6 +213,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D77C79AA13E8591D00290CCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7B6D51B13D93F2800D12DB0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7B6D66C13D93FAB00D12DB0;
+			remoteInfo = cocos2d;
+		};
 		D7B6D54C13D93F2900D12DB0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D7B6D51B13D93F2800D12DB0 /* Project object */;
@@ -225,6 +237,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D77C79AE13E8595000290CCE /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		D77C79AF13E8595000290CCE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		D77C79B013E8595000290CCE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D77C79B413E8596000290CCE /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D7B6D52413D93F2800D12DB0 /* LogisticGiant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogisticGiant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B6D52813D93F2800D12DB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D7B6D52A13D93F2800D12DB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -435,6 +451,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77C79B513E8596000290CCE /* libz.dylib in Frameworks */,
+				D77C79B113E8595000290CCE /* OpenAL.framework in Frameworks */,
+				D77C79B213E8595000290CCE /* OpenGLES.framework in Frameworks */,
+				D77C79B313E8595000290CCE /* QuartzCore.framework in Frameworks */,
+				D77C79AD13E8592F00290CCE /* libcocos2d.a in Frameworks */,
 				D7B6D52913D93F2800D12DB0 /* UIKit.framework in Frameworks */,
 				D7B6D52B13D93F2800D12DB0 /* Foundation.framework in Frameworks */,
 				D7B6D52D13D93F2800D12DB0 /* CoreGraphics.framework in Frameworks */,
@@ -476,6 +497,11 @@
 		D7B6D51913D93F2800D12DB0 = {
 			isa = PBXGroup;
 			children = (
+				D77C79B413E8596000290CCE /* libz.dylib */,
+				D77C79AE13E8595000290CCE /* OpenAL.framework */,
+				D77C79AF13E8595000290CCE /* OpenGLES.framework */,
+				D77C79B013E8595000290CCE /* QuartzCore.framework */,
+				D7B6D66D13D93FAB00D12DB0 /* libcocos2d.a */,
 				D7B6D56113D93F3E00D12DB0 /* Support */,
 				D7B6D52E13D93F2800D12DB0 /* LogisticGiant */,
 				D7B6D54E13D93F2900D12DB0 /* LogisticGiantTests */,
@@ -491,7 +517,6 @@
 			children = (
 				D7B6D52413D93F2800D12DB0 /* LogisticGiant.app */,
 				D7B6D54813D93F2800D12DB0 /* LogisticGiantTests.octest */,
-				D7B6D66D13D93FAB00D12DB0 /* libcocos2d.a */,
 				D7B6D67713D93FAB00D12DB0 /* cocos2dTests.octest */,
 			);
 			name = Products;
@@ -946,6 +971,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D77C79AB13E8591D00290CCE /* PBXTargetDependency */,
 			);
 			name = LogisticGiant;
 			productName = LogisticGiant;
@@ -1210,6 +1236,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D77C79AB13E8591D00290CCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7B6D66C13D93FAB00D12DB0 /* cocos2d */;
+			targetProxy = D77C79AA13E8591D00290CCE /* PBXContainerItemProxy */;
+		};
 		D7B6D54D13D93F2900D12DB0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D7B6D52313D93F2800D12DB0 /* LogisticGiant */;

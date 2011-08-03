@@ -6,11 +6,5 @@
 //  Copyright 2011 FrontGo. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-
-@interface GamePlayScene : CCScene {
-    
-}
-
+@interface GamePlayScene : CCScene {}
 @end

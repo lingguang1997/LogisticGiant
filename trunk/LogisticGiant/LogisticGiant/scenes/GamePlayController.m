@@ -13,8 +13,13 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  ASLogInfo(@"aaa");
   
+  GamePlayScene *gps = [GamePlayScene node];
+  
+  AtlasManager *atlasManager = [[AtlasManager alloc] initWithNode:gps];
+  [atlasManager drawMapBy:@"map_1"];
+  
+  [[CCDirector sharedDirector] runWithScene:gps];
 }
 
 @end

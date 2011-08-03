@@ -210,6 +210,18 @@
 		D7B6D7F113D93FBB00D12DB0 /* ZAttributedStringPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B6D74213D93FBB00D12DB0 /* ZAttributedStringPrivate.h */; };
 		D7B6D7F213D93FBB00D12DB0 /* ZFont.h in Headers */ = {isa = PBXBuildFile; fileRef = D7B6D74313D93FBB00D12DB0 /* ZFont.h */; };
 		D7B6D7F313D93FBB00D12DB0 /* ZFont.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6D74413D93FBB00D12DB0 /* ZFont.m */; };
+		D7D3C7C013E8884400EB12BB /* ASLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C7BA13E8884400EB12BB /* ASLogger.m */; };
+		D7D3C7DC13E889FC00EB12BB /* settings.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C7DB13E889FC00EB12BB /* settings.m */; };
+		D7D3C7E013E8945700EB12BB /* MemoryUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C7DF13E8945700EB12BB /* MemoryUtils.m */; };
+		D7D3C7EA13E895B300EB12BB /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C7E313E895B300EB12BB /* NSData+Base64.m */; };
+		D7D3C7EB13E895B300EB12BB /* NSError+CFStreamError.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C7E513E895B300EB12BB /* NSError+CFStreamError.m */; };
+		D7D3C7EC13E895B300EB12BB /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C7E713E895B300EB12BB /* NSObject+Properties.m */; };
+		D7D3C7ED13E895B300EB12BB /* NSString+PropertyKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C7E913E895B300EB12BB /* NSString+PropertyKVC.m */; };
+		D7D3C7F013E895F600EB12BB /* b64.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C7EF13E895F600EB12BB /* b64.m */; };
+		D7D3C7F213E8974300EB12BB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7D3C7F113E8974300EB12BB /* CFNetwork.framework */; };
+		D7D3C7F513E897E800EB12BB /* ASLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C7F413E897E800EB12BB /* ASLResponse.m */; };
+		D7D3C7FA13E8981100EB12BB /* ASLMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C7F713E8981100EB12BB /* ASLMessage.m */; };
+		D7D3C7FB13E8981100EB12BB /* ASLQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C7F913E8981100EB12BB /* ASLQuery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -444,6 +456,30 @@
 		D7B6D74213D93FBB00D12DB0 /* ZAttributedStringPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZAttributedStringPrivate.h; sourceTree = "<group>"; };
 		D7B6D74313D93FBB00D12DB0 /* ZFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFont.h; sourceTree = "<group>"; };
 		D7B6D74413D93FBB00D12DB0 /* ZFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFont.m; sourceTree = "<group>"; };
+		D7D3C7B913E8884400EB12BB /* ASLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASLogger.h; path = Support/aqtoolkit/ASLogger/ASLogger.h; sourceTree = "<group>"; };
+		D7D3C7BA13E8884400EB12BB /* ASLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASLogger.m; path = Support/aqtoolkit/ASLogger/ASLogger.m; sourceTree = "<group>"; };
+		D7D3C7D913E889D700EB12BB /* LG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LG.h; sourceTree = "<group>"; };
+		D7D3C7DA13E889FC00EB12BB /* settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settings.h; sourceTree = "<group>"; };
+		D7D3C7DB13E889FC00EB12BB /* settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settings.m; sourceTree = "<group>"; };
+		D7D3C7DE13E8945700EB12BB /* MemoryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemoryUtils.h; path = utils/MemoryUtils.h; sourceTree = "<group>"; };
+		D7D3C7DF13E8945700EB12BB /* MemoryUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MemoryUtils.m; path = utils/MemoryUtils.m; sourceTree = "<group>"; };
+		D7D3C7E213E895B300EB12BB /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSData+Base64.h"; path = "Support/aqtoolkit/Extensions/NSData+Base64.h"; sourceTree = "<group>"; };
+		D7D3C7E313E895B300EB12BB /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSData+Base64.m"; path = "Support/aqtoolkit/Extensions/NSData+Base64.m"; sourceTree = "<group>"; };
+		D7D3C7E413E895B300EB12BB /* NSError+CFStreamError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSError+CFStreamError.h"; path = "Support/aqtoolkit/Extensions/NSError+CFStreamError.h"; sourceTree = "<group>"; };
+		D7D3C7E513E895B300EB12BB /* NSError+CFStreamError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSError+CFStreamError.m"; path = "Support/aqtoolkit/Extensions/NSError+CFStreamError.m"; sourceTree = "<group>"; };
+		D7D3C7E613E895B300EB12BB /* NSObject+Properties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Properties.h"; path = "Support/aqtoolkit/Extensions/NSObject+Properties.h"; sourceTree = "<group>"; };
+		D7D3C7E713E895B300EB12BB /* NSObject+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Properties.m"; path = "Support/aqtoolkit/Extensions/NSObject+Properties.m"; sourceTree = "<group>"; };
+		D7D3C7E813E895B300EB12BB /* NSString+PropertyKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+PropertyKVC.h"; path = "Support/aqtoolkit/Extensions/NSString+PropertyKVC.h"; sourceTree = "<group>"; };
+		D7D3C7E913E895B300EB12BB /* NSString+PropertyKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+PropertyKVC.m"; path = "Support/aqtoolkit/Extensions/NSString+PropertyKVC.m"; sourceTree = "<group>"; };
+		D7D3C7EE13E895F600EB12BB /* b64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = b64.h; path = Support/aqtoolkit/Extensions/b64.h; sourceTree = "<group>"; };
+		D7D3C7EF13E895F600EB12BB /* b64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = b64.m; path = Support/aqtoolkit/Extensions/b64.m; sourceTree = "<group>"; };
+		D7D3C7F113E8974300EB12BB /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D7D3C7F313E897E800EB12BB /* ASLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASLResponse.h; path = Support/aqtoolkit/ASLogger/ASLResponse.h; sourceTree = "<group>"; };
+		D7D3C7F413E897E800EB12BB /* ASLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASLResponse.m; path = Support/aqtoolkit/ASLogger/ASLResponse.m; sourceTree = "<group>"; };
+		D7D3C7F613E8981100EB12BB /* ASLMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASLMessage.h; path = Support/aqtoolkit/ASLogger/ASLMessage.h; sourceTree = "<group>"; };
+		D7D3C7F713E8981100EB12BB /* ASLMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASLMessage.m; path = Support/aqtoolkit/ASLogger/ASLMessage.m; sourceTree = "<group>"; };
+		D7D3C7F813E8981100EB12BB /* ASLQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASLQuery.h; path = Support/aqtoolkit/ASLogger/ASLQuery.h; sourceTree = "<group>"; };
+		D7D3C7F913E8981100EB12BB /* ASLQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASLQuery.m; path = Support/aqtoolkit/ASLogger/ASLQuery.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -451,6 +487,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7D3C7F213E8974300EB12BB /* CFNetwork.framework in Frameworks */,
 				D77C79B513E8596000290CCE /* libz.dylib in Frameworks */,
 				D77C79B113E8595000290CCE /* OpenAL.framework in Frameworks */,
 				D77C79B213E8595000290CCE /* OpenGLES.framework in Frameworks */,
@@ -497,6 +534,7 @@
 		D7B6D51913D93F2800D12DB0 = {
 			isa = PBXGroup;
 			children = (
+				D7D3C7F113E8974300EB12BB /* CFNetwork.framework */,
 				D77C79B413E8596000290CCE /* libz.dylib */,
 				D77C79AE13E8595000290CCE /* OpenAL.framework */,
 				D77C79AF13E8595000290CCE /* OpenGLES.framework */,
@@ -535,6 +573,10 @@
 		D7B6D52E13D93F2800D12DB0 /* LogisticGiant */ = {
 			isa = PBXGroup;
 			children = (
+				D7D3C7DD13E893A600EB12BB /* utils */,
+				D7D3C7D913E889D700EB12BB /* LG.h */,
+				D7D3C7DA13E889FC00EB12BB /* settings.h */,
+				D7D3C7DB13E889FC00EB12BB /* settings.m */,
 				D7B6D53713D93F2800D12DB0 /* LogisticGiantAppDelegate.h */,
 				D7B6D53813D93F2800D12DB0 /* LogisticGiantAppDelegate.m */,
 				D7B6D53A13D93F2800D12DB0 /* MainWindow.xib */,
@@ -580,6 +622,7 @@
 		D7B6D56113D93F3E00D12DB0 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				D7D3C7B613E8882300EB12BB /* ASLog */,
 				D7B6D68F13D93FBB00D12DB0 /* cocos2d */,
 				D7B6D73813D93FBB00D12DB0 /* external */,
 			);
@@ -851,6 +894,48 @@
 				D7B6D74413D93FBB00D12DB0 /* ZFont.m */,
 			);
 			path = FontLabel;
+			sourceTree = "<group>";
+		};
+		D7D3C7B613E8882300EB12BB /* ASLog */ = {
+			isa = PBXGroup;
+			children = (
+				D7D3C7F613E8981100EB12BB /* ASLMessage.h */,
+				D7D3C7F713E8981100EB12BB /* ASLMessage.m */,
+				D7D3C7F813E8981100EB12BB /* ASLQuery.h */,
+				D7D3C7F913E8981100EB12BB /* ASLQuery.m */,
+				D7D3C7F313E897E800EB12BB /* ASLResponse.h */,
+				D7D3C7F413E897E800EB12BB /* ASLResponse.m */,
+				D7D3C7E113E8959000EB12BB /* Extensions */,
+				D7D3C7B913E8884400EB12BB /* ASLogger.h */,
+				D7D3C7BA13E8884400EB12BB /* ASLogger.m */,
+			);
+			name = ASLog;
+			sourceTree = "<group>";
+		};
+		D7D3C7DD13E893A600EB12BB /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				D7D3C7DE13E8945700EB12BB /* MemoryUtils.h */,
+				D7D3C7DF13E8945700EB12BB /* MemoryUtils.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		D7D3C7E113E8959000EB12BB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D7D3C7EE13E895F600EB12BB /* b64.h */,
+				D7D3C7EF13E895F600EB12BB /* b64.m */,
+				D7D3C7E213E895B300EB12BB /* NSData+Base64.h */,
+				D7D3C7E313E895B300EB12BB /* NSData+Base64.m */,
+				D7D3C7E413E895B300EB12BB /* NSError+CFStreamError.h */,
+				D7D3C7E513E895B300EB12BB /* NSError+CFStreamError.m */,
+				D7D3C7E613E895B300EB12BB /* NSObject+Properties.h */,
+				D7D3C7E713E895B300EB12BB /* NSObject+Properties.m */,
+				D7D3C7E813E895B300EB12BB /* NSString+PropertyKVC.h */,
+				D7D3C7E913E895B300EB12BB /* NSString+PropertyKVC.m */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1126,6 +1211,17 @@
 				D7B6D53613D93F2800D12DB0 /* main.m in Sources */,
 				D7B6D53913D93F2800D12DB0 /* LogisticGiantAppDelegate.m in Sources */,
 				D7B6D53F13D93F2800D12DB0 /* LogisticGiantViewController.m in Sources */,
+				D7D3C7C013E8884400EB12BB /* ASLogger.m in Sources */,
+				D7D3C7DC13E889FC00EB12BB /* settings.m in Sources */,
+				D7D3C7E013E8945700EB12BB /* MemoryUtils.m in Sources */,
+				D7D3C7EA13E895B300EB12BB /* NSData+Base64.m in Sources */,
+				D7D3C7EB13E895B300EB12BB /* NSError+CFStreamError.m in Sources */,
+				D7D3C7EC13E895B300EB12BB /* NSObject+Properties.m in Sources */,
+				D7D3C7ED13E895B300EB12BB /* NSString+PropertyKVC.m in Sources */,
+				D7D3C7F013E895F600EB12BB /* b64.m in Sources */,
+				D7D3C7F513E897E800EB12BB /* ASLResponse.m in Sources */,
+				D7D3C7FA13E8981100EB12BB /* ASLMessage.m in Sources */,
+				D7D3C7FB13E8981100EB12BB /* ASLQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1304,7 +1400,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					LOG_MEMORY_USAGE,
+				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;

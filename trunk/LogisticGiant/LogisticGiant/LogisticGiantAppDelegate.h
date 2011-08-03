@@ -11,11 +11,12 @@
 @class LogisticGiantViewController;
 
 @interface LogisticGiantAppDelegate : NSObject <UIApplicationDelegate> {
+  UIWindow *window;
 
 }
+@property(retain) UIWindow *window;
+//@property (nonatomic, retain) IBOutlet UIWindow *window;
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-
-@property (nonatomic, retain) IBOutlet LogisticGiantViewController *viewController;
+//@property (nonatomic, retain) IBOutlet LogisticGiantViewController *viewController;
 
 @end

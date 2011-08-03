@@ -10,6 +10,10 @@
 		D764907613E9037200EC4D5A /* ScreenNav.m in Sources */ = {isa = PBXBuildFile; fileRef = D764907513E9037200EC4D5A /* ScreenNav.m */; };
 		D764907A13E9047A00EC4D5A /* LGScreenNav.m in Sources */ = {isa = PBXBuildFile; fileRef = D764907913E9047900EC4D5A /* LGScreenNav.m */; };
 		D764907E13E9078D00EC4D5A /* GamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D764907D13E9078D00EC4D5A /* GamePlay.m */; };
+		D764908413E913B700EC4D5A /* AtlasManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D764908313E913B600EC4D5A /* AtlasManager.m */; };
+		D764908813E9147800EC4D5A /* Cocos2dPatches.m in Sources */ = {isa = PBXBuildFile; fileRef = D764908713E9147800EC4D5A /* Cocos2dPatches.m */; };
+		D764908D13E9153A00EC4D5A /* map_1 in Resources */ = {isa = PBXBuildFile; fileRef = D764908B13E9153A00EC4D5A /* map_1 */; };
+		D764908E13E9153A00EC4D5A /* track_tile.png in Resources */ = {isa = PBXBuildFile; fileRef = D764908C13E9153A00EC4D5A /* track_tile.png */; };
 		D77C79AD13E8592F00290CCE /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B6D66D13D93FAB00D12DB0 /* libcocos2d.a */; };
 		D77C79B113E8595000290CCE /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77C79AE13E8595000290CCE /* OpenAL.framework */; };
 		D77C79B213E8595000290CCE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77C79AF13E8595000290CCE /* OpenGLES.framework */; };
@@ -255,6 +259,12 @@
 		D764907913E9047900EC4D5A /* LGScreenNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGScreenNav.m; sourceTree = "<group>"; };
 		D764907C13E9078D00EC4D5A /* GamePlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePlay.h; path = scenes/GamePlay.h; sourceTree = "<group>"; };
 		D764907D13E9078D00EC4D5A /* GamePlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamePlay.m; path = scenes/GamePlay.m; sourceTree = "<group>"; };
+		D764908213E913B600EC4D5A /* AtlasManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtlasManager.h; sourceTree = "<group>"; };
+		D764908313E913B600EC4D5A /* AtlasManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtlasManager.m; sourceTree = "<group>"; };
+		D764908613E9147800EC4D5A /* Cocos2dPatches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cocos2dPatches.h; path = patches/Cocos2dPatches.h; sourceTree = "<group>"; };
+		D764908713E9147800EC4D5A /* Cocos2dPatches.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Cocos2dPatches.m; path = patches/Cocos2dPatches.m; sourceTree = "<group>"; };
+		D764908B13E9153A00EC4D5A /* map_1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = map_1; path = Resources/map/map_1; sourceTree = "<group>"; };
+		D764908C13E9153A00EC4D5A /* track_tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = track_tile.png; path = Resources/map/track_tile.png; sourceTree = "<group>"; };
 		D77C79AE13E8595000290CCE /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D77C79AF13E8595000290CCE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		D77C79B013E8595000290CCE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -542,17 +552,52 @@
 			name = scenes;
 			sourceTree = "<group>";
 		};
+		D764908513E9146800EC4D5A /* patches */ = {
+			isa = PBXGroup;
+			children = (
+				D764908613E9147800EC4D5A /* Cocos2dPatches.h */,
+				D764908713E9147800EC4D5A /* Cocos2dPatches.m */,
+			);
+			name = patches;
+			sourceTree = "<group>";
+		};
+		D764908913E9151900EC4D5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D764908A13E9152700EC4D5A /* map */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D764908A13E9152700EC4D5A /* map */ = {
+			isa = PBXGroup;
+			children = (
+				D764908B13E9153A00EC4D5A /* map_1 */,
+				D764908C13E9153A00EC4D5A /* track_tile.png */,
+			);
+			name = map;
+			sourceTree = "<group>";
+		};
+		D764909013E9158B00EC4D5A /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				D77C79B413E8596000290CCE /* libz.dylib */,
+				D7B6D66D13D93FAB00D12DB0 /* libcocos2d.a */,
+				D77C79B013E8595000290CCE /* QuartzCore.framework */,
+				D77C79AF13E8595000290CCE /* OpenGLES.framework */,
+				D77C79AE13E8595000290CCE /* OpenAL.framework */,
+				D7D3C7F113E8974300EB12BB /* CFNetwork.framework */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
 		D7B6D51913D93F2800D12DB0 = {
 			isa = PBXGroup;
 			children = (
-				D7D3C7F113E8974300EB12BB /* CFNetwork.framework */,
-				D77C79B413E8596000290CCE /* libz.dylib */,
-				D77C79AE13E8595000290CCE /* OpenAL.framework */,
-				D77C79AF13E8595000290CCE /* OpenGLES.framework */,
-				D77C79B013E8595000290CCE /* QuartzCore.framework */,
-				D7B6D66D13D93FAB00D12DB0 /* libcocos2d.a */,
-				D7B6D56113D93F3E00D12DB0 /* Support */,
 				D7B6D52E13D93F2800D12DB0 /* LogisticGiant */,
+				D764908913E9151900EC4D5A /* Resources */,
+				D7B6D56113D93F3E00D12DB0 /* Support */,
+				D764909013E9158B00EC4D5A /* framework */,
 				D7B6D54E13D93F2900D12DB0 /* LogisticGiantTests */,
 				D7B6D66F13D93FAB00D12DB0 /* cocos2d */,
 				D7B6D67E13D93FAB00D12DB0 /* cocos2dTests */,
@@ -586,14 +631,17 @@
 			children = (
 				D764907B13E9072400EC4D5A /* scenes */,
 				D7D3C7DD13E893A600EB12BB /* utils */,
+				D764908513E9146800EC4D5A /* patches */,
+				D7B6D52F13D93F2800D12DB0 /* Supporting Files */,
 				D7D3C7D913E889D700EB12BB /* LG.h */,
 				D7D3C7DA13E889FC00EB12BB /* settings.h */,
 				D7D3C7DB13E889FC00EB12BB /* settings.m */,
-				D7B6D53713D93F2800D12DB0 /* LogisticGiantAppDelegate.h */,
-				D7B6D53813D93F2800D12DB0 /* LogisticGiantAppDelegate.m */,
-				D7B6D52F13D93F2800D12DB0 /* Supporting Files */,
+				D764908213E913B600EC4D5A /* AtlasManager.h */,
+				D764908313E913B600EC4D5A /* AtlasManager.m */,
 				D764907813E9047900EC4D5A /* LGScreenNav.h */,
 				D764907913E9047900EC4D5A /* LGScreenNav.m */,
+				D7B6D53713D93F2800D12DB0 /* LogisticGiantAppDelegate.h */,
+				D7B6D53813D93F2800D12DB0 /* LogisticGiantAppDelegate.m */,
 			);
 			path = LogisticGiant;
 			sourceTree = "<group>";
@@ -1161,6 +1209,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B6D53313D93F2800D12DB0 /* InfoPlist.strings in Resources */,
+				D764908D13E9153A00EC4D5A /* map_1 in Resources */,
+				D764908E13E9153A00EC4D5A /* track_tile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1234,6 +1284,8 @@
 				D764907613E9037200EC4D5A /* ScreenNav.m in Sources */,
 				D764907A13E9047A00EC4D5A /* LGScreenNav.m in Sources */,
 				D764907E13E9078D00EC4D5A /* GamePlay.m in Sources */,
+				D764908413E913B700EC4D5A /* AtlasManager.m in Sources */,
+				D764908813E9147800EC4D5A /* Cocos2dPatches.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

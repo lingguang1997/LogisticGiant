@@ -14,6 +14,8 @@
 #import "ScreenNav.h"
 #import "LGScreenNav.h"
 #import "GamePlay.h"
+#import "Cocos2dPatches.h"
+#import "AtlasManager.h"
 
 // LG Scenes
 #import "LogisticGiantAppDelegate.h"

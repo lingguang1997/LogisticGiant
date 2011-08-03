@@ -12,10 +12,8 @@
 @implementation LogisticGiantAppDelegate
 @synthesize window;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  //self.window.rootViewController = self.viewController;
-  //[self.window makeKeyAndVisible];
-  
+- (BOOL)application:(UIApplication *)application
+        didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Set up Logger
   ASLogger *logger = [ASLogger defaultLogger];
   [logger setName:@"LogisticGiant"
@@ -27,6 +25,31 @@
   ASLogWarning(@"Before init app.");
   print_free_memory();
 #endif
+
+  self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]]
+                 autorelease];
+  [window setUserInteractionEnabled:YES];
+  [window setMultipleTouchEnabled:YES];
+
+  screenNav = [[LGScreenNav alloc] initWithViewController:
+               [[GamePlayController new] autorelease]];
+  [window addSubview:screenNav.view];
+
+  [window makeKeyAndVisible];
+  
+  // must be called before any other call to the director
+  // default NSTimer Director sometimes not working under OS4
+  if(![CCDirector setDirectorType:CCDirectorTypeDisplayLink])
+    [CCDirector setDirectorType:CCDirectorTypeDefault];
+  [[CCDirector sharedDirector] setAnimationInterval:1.0 / FRAME_RATE];
+  
+  // Create a depth buffer of 24 bits
+  // These means that openGL z-order will be taken into account
+  // [[CCDirector sharedDirector] setDepthBufferFormat:kDepthBuffer16];
+  
+  // before creating any layer, set the landscape mode
+  [[CCDirector sharedDirector] setDisplayFPS:DISPLAY_FPS];
+  
   
   
   return YES;

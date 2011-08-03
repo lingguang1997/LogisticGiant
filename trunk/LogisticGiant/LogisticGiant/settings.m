@@ -8,5 +8,8 @@
 
 #import "LG.h"
 
-
+#pragma mark Cocos2D
 const BOOL SHOW_FPS = NO;
+
+#pragma mark Global variables
+LGScreenNav *screenNav = nil;

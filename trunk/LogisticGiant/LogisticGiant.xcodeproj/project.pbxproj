@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D764907613E9037200EC4D5A /* ScreenNav.m in Sources */ = {isa = PBXBuildFile; fileRef = D764907513E9037200EC4D5A /* ScreenNav.m */; };
+		D764907A13E9047A00EC4D5A /* LGScreenNav.m in Sources */ = {isa = PBXBuildFile; fileRef = D764907913E9047900EC4D5A /* LGScreenNav.m */; };
+		D764907E13E9078D00EC4D5A /* GamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D764907D13E9078D00EC4D5A /* GamePlay.m */; };
 		D77C79AD13E8592F00290CCE /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B6D66D13D93FAB00D12DB0 /* libcocos2d.a */; };
 		D77C79B113E8595000290CCE /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77C79AE13E8595000290CCE /* OpenAL.framework */; };
 		D77C79B213E8595000290CCE /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D77C79AF13E8595000290CCE /* OpenGLES.framework */; };
@@ -18,9 +21,6 @@
 		D7B6D53313D93F2800D12DB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7B6D53113D93F2800D12DB0 /* InfoPlist.strings */; };
 		D7B6D53613D93F2800D12DB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6D53513D93F2800D12DB0 /* main.m */; };
 		D7B6D53913D93F2800D12DB0 /* LogisticGiantAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6D53813D93F2800D12DB0 /* LogisticGiantAppDelegate.m */; };
-		D7B6D53C13D93F2800D12DB0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B6D53A13D93F2800D12DB0 /* MainWindow.xib */; };
-		D7B6D53F13D93F2800D12DB0 /* LogisticGiantViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7B6D53E13D93F2800D12DB0 /* LogisticGiantViewController.m */; };
-		D7B6D54213D93F2800D12DB0 /* LogisticGiantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7B6D54013D93F2800D12DB0 /* LogisticGiantViewController.xib */; };
 		D7B6D54913D93F2900D12DB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B6D52813D93F2800D12DB0 /* UIKit.framework */; };
 		D7B6D54A13D93F2900D12DB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B6D52A13D93F2800D12DB0 /* Foundation.framework */; };
 		D7B6D54B13D93F2900D12DB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B6D52C13D93F2800D12DB0 /* CoreGraphics.framework */; };
@@ -249,6 +249,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D764907413E9037200EC4D5A /* ScreenNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScreenNav.h; path = utils/ScreenNav.h; sourceTree = "<group>"; };
+		D764907513E9037200EC4D5A /* ScreenNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScreenNav.m; path = utils/ScreenNav.m; sourceTree = "<group>"; };
+		D764907813E9047900EC4D5A /* LGScreenNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGScreenNav.h; sourceTree = "<group>"; };
+		D764907913E9047900EC4D5A /* LGScreenNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGScreenNav.m; sourceTree = "<group>"; };
+		D764907C13E9078D00EC4D5A /* GamePlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePlay.h; path = scenes/GamePlay.h; sourceTree = "<group>"; };
+		D764907D13E9078D00EC4D5A /* GamePlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamePlay.m; path = scenes/GamePlay.m; sourceTree = "<group>"; };
 		D77C79AE13E8595000290CCE /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		D77C79AF13E8595000290CCE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		D77C79B013E8595000290CCE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -263,10 +269,6 @@
 		D7B6D53513D93F2800D12DB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D7B6D53713D93F2800D12DB0 /* LogisticGiantAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogisticGiantAppDelegate.h; sourceTree = "<group>"; };
 		D7B6D53813D93F2800D12DB0 /* LogisticGiantAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogisticGiantAppDelegate.m; sourceTree = "<group>"; };
-		D7B6D53B13D93F2800D12DB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		D7B6D53D13D93F2800D12DB0 /* LogisticGiantViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogisticGiantViewController.h; sourceTree = "<group>"; };
-		D7B6D53E13D93F2800D12DB0 /* LogisticGiantViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogisticGiantViewController.m; sourceTree = "<group>"; };
-		D7B6D54113D93F2800D12DB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LogisticGiantViewController.xib; sourceTree = "<group>"; };
 		D7B6D54813D93F2800D12DB0 /* LogisticGiantTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogisticGiantTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7B6D55013D93F2900D12DB0 /* LogisticGiantTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogisticGiantTests-Info.plist"; sourceTree = "<group>"; };
 		D7B6D55213D93F2900D12DB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -531,6 +533,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D764907B13E9072400EC4D5A /* scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D764907C13E9078D00EC4D5A /* GamePlay.h */,
+				D764907D13E9078D00EC4D5A /* GamePlay.m */,
+			);
+			name = scenes;
+			sourceTree = "<group>";
+		};
 		D7B6D51913D93F2800D12DB0 = {
 			isa = PBXGroup;
 			children = (
@@ -573,17 +584,16 @@
 		D7B6D52E13D93F2800D12DB0 /* LogisticGiant */ = {
 			isa = PBXGroup;
 			children = (
+				D764907B13E9072400EC4D5A /* scenes */,
 				D7D3C7DD13E893A600EB12BB /* utils */,
 				D7D3C7D913E889D700EB12BB /* LG.h */,
 				D7D3C7DA13E889FC00EB12BB /* settings.h */,
 				D7D3C7DB13E889FC00EB12BB /* settings.m */,
 				D7B6D53713D93F2800D12DB0 /* LogisticGiantAppDelegate.h */,
 				D7B6D53813D93F2800D12DB0 /* LogisticGiantAppDelegate.m */,
-				D7B6D53A13D93F2800D12DB0 /* MainWindow.xib */,
-				D7B6D53D13D93F2800D12DB0 /* LogisticGiantViewController.h */,
-				D7B6D53E13D93F2800D12DB0 /* LogisticGiantViewController.m */,
-				D7B6D54013D93F2800D12DB0 /* LogisticGiantViewController.xib */,
 				D7B6D52F13D93F2800D12DB0 /* Supporting Files */,
+				D764907813E9047900EC4D5A /* LGScreenNav.h */,
+				D764907913E9047900EC4D5A /* LGScreenNav.m */,
 			);
 			path = LogisticGiant;
 			sourceTree = "<group>";
@@ -915,6 +925,8 @@
 		D7D3C7DD13E893A600EB12BB /* utils */ = {
 			isa = PBXGroup;
 			children = (
+				D764907413E9037200EC4D5A /* ScreenNav.h */,
+				D764907513E9037200EC4D5A /* ScreenNav.m */,
 				D7D3C7DE13E8945700EB12BB /* MemoryUtils.h */,
 				D7D3C7DF13E8945700EB12BB /* MemoryUtils.m */,
 			);
@@ -1149,8 +1161,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7B6D53313D93F2800D12DB0 /* InfoPlist.strings in Resources */,
-				D7B6D53C13D93F2800D12DB0 /* MainWindow.xib in Resources */,
-				D7B6D54213D93F2800D12DB0 /* LogisticGiantViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1210,7 +1220,6 @@
 			files = (
 				D7B6D53613D93F2800D12DB0 /* main.m in Sources */,
 				D7B6D53913D93F2800D12DB0 /* LogisticGiantAppDelegate.m in Sources */,
-				D7B6D53F13D93F2800D12DB0 /* LogisticGiantViewController.m in Sources */,
 				D7D3C7C013E8884400EB12BB /* ASLogger.m in Sources */,
 				D7D3C7DC13E889FC00EB12BB /* settings.m in Sources */,
 				D7D3C7E013E8945700EB12BB /* MemoryUtils.m in Sources */,
@@ -1222,6 +1231,9 @@
 				D7D3C7F513E897E800EB12BB /* ASLResponse.m in Sources */,
 				D7D3C7FA13E8981100EB12BB /* ASLMessage.m in Sources */,
 				D7D3C7FB13E8981100EB12BB /* ASLQuery.m in Sources */,
+				D764907613E9037200EC4D5A /* ScreenNav.m in Sources */,
+				D764907A13E9047A00EC4D5A /* LGScreenNav.m in Sources */,
+				D764907E13E9078D00EC4D5A /* GamePlay.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1356,22 +1368,6 @@
 				D7B6D53213D93F2800D12DB0 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D7B6D53A13D93F2800D12DB0 /* MainWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7B6D53B13D93F2800D12DB0 /* en */,
-			);
-			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		D7B6D54013D93F2800D12DB0 /* LogisticGiantViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D7B6D54113D93F2800D12DB0 /* en */,
-			);
-			name = LogisticGiantViewController.xib;
 			sourceTree = "<group>";
 		};
 		D7B6D55113D93F2900D12DB0 /* InfoPlist.strings */ = {

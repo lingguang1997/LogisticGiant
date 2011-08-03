@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D764907613E9037200EC4D5A /* ScreenNav.m in Sources */ = {isa = PBXBuildFile; fileRef = D764907513E9037200EC4D5A /* ScreenNav.m */; };
 		D764907A13E9047A00EC4D5A /* LGScreenNav.m in Sources */ = {isa = PBXBuildFile; fileRef = D764907913E9047900EC4D5A /* LGScreenNav.m */; };
-		D764907E13E9078D00EC4D5A /* GamePlay.m in Sources */ = {isa = PBXBuildFile; fileRef = D764907D13E9078D00EC4D5A /* GamePlay.m */; };
+		D764907E13E9078D00EC4D5A /* GamePlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = D764907D13E9078D00EC4D5A /* GamePlayController.m */; };
 		D764908413E913B700EC4D5A /* AtlasManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D764908313E913B600EC4D5A /* AtlasManager.m */; };
 		D764908813E9147800EC4D5A /* Cocos2dPatches.m in Sources */ = {isa = PBXBuildFile; fileRef = D764908713E9147800EC4D5A /* Cocos2dPatches.m */; };
 		D764908D13E9153A00EC4D5A /* map_1 in Resources */ = {isa = PBXBuildFile; fileRef = D764908B13E9153A00EC4D5A /* map_1 */; };
@@ -226,6 +226,8 @@
 		D7D3C7F513E897E800EB12BB /* ASLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C7F413E897E800EB12BB /* ASLResponse.m */; };
 		D7D3C7FA13E8981100EB12BB /* ASLMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C7F713E8981100EB12BB /* ASLMessage.m */; };
 		D7D3C7FB13E8981100EB12BB /* ASLQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D7D3C7F913E8981100EB12BB /* ASLQuery.m */; };
+		D7FBAEBE13E91B4400A77B1C /* GamePlayScene.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FBAEBD13E91B4400A77B1C /* GamePlayScene.m */; };
+		D7FBAED613E9256A00A77B1C /* ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D7FBAED513E9256A00A77B1C /* ipad.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,8 +259,8 @@
 		D764907513E9037200EC4D5A /* ScreenNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScreenNav.m; path = utils/ScreenNav.m; sourceTree = "<group>"; };
 		D764907813E9047900EC4D5A /* LGScreenNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGScreenNav.h; sourceTree = "<group>"; };
 		D764907913E9047900EC4D5A /* LGScreenNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGScreenNav.m; sourceTree = "<group>"; };
-		D764907C13E9078D00EC4D5A /* GamePlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePlay.h; path = scenes/GamePlay.h; sourceTree = "<group>"; };
-		D764907D13E9078D00EC4D5A /* GamePlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamePlay.m; path = scenes/GamePlay.m; sourceTree = "<group>"; };
+		D764907C13E9078D00EC4D5A /* GamePlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GamePlayController.h; path = scenes/GamePlayController.h; sourceTree = "<group>"; };
+		D764907D13E9078D00EC4D5A /* GamePlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GamePlayController.m; path = scenes/GamePlayController.m; sourceTree = "<group>"; };
 		D764908213E913B600EC4D5A /* AtlasManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtlasManager.h; sourceTree = "<group>"; };
 		D764908313E913B600EC4D5A /* AtlasManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtlasManager.m; sourceTree = "<group>"; };
 		D764908613E9147800EC4D5A /* Cocos2dPatches.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cocos2dPatches.h; path = patches/Cocos2dPatches.h; sourceTree = "<group>"; };
@@ -492,6 +494,9 @@
 		D7D3C7F713E8981100EB12BB /* ASLMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASLMessage.m; path = Support/aqtoolkit/ASLogger/ASLMessage.m; sourceTree = "<group>"; };
 		D7D3C7F813E8981100EB12BB /* ASLQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ASLQuery.h; path = Support/aqtoolkit/ASLogger/ASLQuery.h; sourceTree = "<group>"; };
 		D7D3C7F913E8981100EB12BB /* ASLQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ASLQuery.m; path = Support/aqtoolkit/ASLogger/ASLQuery.m; sourceTree = "<group>"; };
+		D7FBAEBC13E91B4400A77B1C /* GamePlayScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePlayScene.h; sourceTree = "<group>"; };
+		D7FBAEBD13E91B4400A77B1C /* GamePlayScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePlayScene.m; sourceTree = "<group>"; };
+		D7FBAED513E9256A00A77B1C /* ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = ipad.jpg; path = Resources/ipad.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -546,8 +551,10 @@
 		D764907B13E9072400EC4D5A /* scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D764907C13E9078D00EC4D5A /* GamePlay.h */,
-				D764907D13E9078D00EC4D5A /* GamePlay.m */,
+				D764907C13E9078D00EC4D5A /* GamePlayController.h */,
+				D764907D13E9078D00EC4D5A /* GamePlayController.m */,
+				D7FBAEBC13E91B4400A77B1C /* GamePlayScene.h */,
+				D7FBAEBD13E91B4400A77B1C /* GamePlayScene.m */,
 			);
 			name = scenes;
 			sourceTree = "<group>";
@@ -564,6 +571,7 @@
 		D764908913E9151900EC4D5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D7FBAED513E9256A00A77B1C /* ipad.jpg */,
 				D764908A13E9152700EC4D5A /* map */,
 			);
 			name = Resources;
@@ -1211,6 +1219,7 @@
 				D7B6D53313D93F2800D12DB0 /* InfoPlist.strings in Resources */,
 				D764908D13E9153A00EC4D5A /* map_1 in Resources */,
 				D764908E13E9153A00EC4D5A /* track_tile.png in Resources */,
+				D7FBAED613E9256A00A77B1C /* ipad.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1283,9 +1292,10 @@
 				D7D3C7FB13E8981100EB12BB /* ASLQuery.m in Sources */,
 				D764907613E9037200EC4D5A /* ScreenNav.m in Sources */,
 				D764907A13E9047A00EC4D5A /* LGScreenNav.m in Sources */,
-				D764907E13E9078D00EC4D5A /* GamePlay.m in Sources */,
+				D764907E13E9078D00EC4D5A /* GamePlayController.m in Sources */,
 				D764908413E913B700EC4D5A /* AtlasManager.m in Sources */,
 				D764908813E9147800EC4D5A /* Cocos2dPatches.m in Sources */,
+				D7FBAEBE13E91B4400A77B1C /* GamePlayScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

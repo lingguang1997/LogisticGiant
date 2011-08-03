@@ -13,9 +13,10 @@
 #import "MemoryUtils.h"
 #import "ScreenNav.h"
 #import "LGScreenNav.h"
-#import "GamePlay.h"
+#import "GamePlayController.h"
 #import "Cocos2dPatches.h"
 #import "AtlasManager.h"
+#import "GamePlayScene.h"
 
 // LG Scenes
 #import "LogisticGiantAppDelegate.h"

@@ -13,11 +13,14 @@
 #define TILE_HEIGHT 10
 
 @implementation AtlasManager
-@synthesize mapMatrix, layer;
+@synthesize mapMatrix, node;
 
-- (void)initWithLayer:(CCLayer *)aLayer {
-  self.layer = aLayer;
-  [super init];
+- (id)initWithNode:(CCNode *)aNode {
+  self.node = aNode;
+  if (!(self = [super init])) {
+    return nil;
+  }
+  return self;
 }
 
 - (void)dealloc {
@@ -79,7 +82,7 @@
   NSInteger v = [(NSNumber *)[array objectAtIndex:1] intValue];
   
   sprite.position = [self toIsometricPoint:ccp(u, v)];
-  [layer addChild:sprite];
+  [node addChild:sprite];
 }
 
 @end

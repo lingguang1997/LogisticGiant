@@ -12,11 +12,12 @@
 @interface AtlasManager : CCNode {
  @public
   NSMutableArray *mapMatrix;
-  CCLayer *layer;
+  CCNode *node;
 }
 @property(retain) NSMutableArray *mapMatrix;
-@property(assign) CCLayer *layer;
+@property(assign) CCNode *node;
 
+- (id)initWithNode:(CCNode *)aNode;
 - (void)drawMapBy:(NSString *)mapFileName;
 - (void)loadMatrixFromFile:(NSString *)filePath;
 - (CGPoint)toIsometricPoint:(CGPoint)point;
